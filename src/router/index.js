@@ -16,7 +16,6 @@ const routes = [
     component: () => import('@/components/Chat.vue'),
     props: true,
     beforeEnter: (to, _, next) => {
-      console.log(to.params.name)
       if (to.params.name) {
         next()
       } else {
