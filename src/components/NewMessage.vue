@@ -29,7 +29,7 @@ export default {
             name: this.name,
             timestamp: Date.now()
           })
-          .catch(error => console.log(error))
+          .catch(error => console.log(error)) // eslint-disable-line no-console
 
         this.newMessage = null
         this.feedback = null
